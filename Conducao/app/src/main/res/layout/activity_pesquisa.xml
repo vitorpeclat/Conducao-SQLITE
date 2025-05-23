@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Pesquisa">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Pesquisa Origem - Destino"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:layout_marginTop="16dp"
+        android:text="Estação de Origem:"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerOrigem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerOrigem"
+        android:layout_marginTop="16dp"
+        android:text="Estação de Destino:"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerOrigem"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/spinnerDestino"
+        android:hint="Digite o nome"
+        android:inputType="textPersonName"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/edTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNome"
+        android:hint="Digite o telefone"
+        android:inputType="phone"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerEntrevistadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTelefone"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerEntrevistadores"
+        android:layout_marginTop="24dp"
+        android:text="Salvar"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btResultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btSalvar"
+        android:layout_marginTop="10dp"
+        android:text="Resultados"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
